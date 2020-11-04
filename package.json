@@ -1,0 +1,29 @@
+{
+  "name": "my-bootstrap",
+  "version": "1.0.0",
+  "description": "modified bootstrap for contact us page with validate and multi layer animation",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch assets/styles/main.scss:assets/styles/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MortezaShirbeigi/contact-us.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "scss",
+    "bootstrap",
+    "javascript"
+  ],
+  "author": "Morteza Shirbeigi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MortezaShirbeigi/contact-us/issues"
+  },
+  "homepage": "https://github.com/MortezaShirbeigi/contact-us#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  }
+}
