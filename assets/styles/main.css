@@ -6532,7 +6532,6 @@ textarea:focus {
   box-shadow: none !important;
 }
 
-/* animations */
 #message1 {
   opacity: 0;
   transform: translateY(1.25rem);
