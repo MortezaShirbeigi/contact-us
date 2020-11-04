@@ -1,7 +1,6 @@
 $theme-colors: (
-  "primary": #000000,
-  "secondary": #de1325,
-  "light": #fff,
+  "primary": #267dff,
+  "secondary": #ff2631,
 );
 
 //Start require for loading bootstrap styles
@@ -32,3 +31,118 @@ body {
 }
 
 // End main styles
+
+.full-desktop {
+  height: 100vh;
+}
+.half-background {
+  background: linear-gradient(120deg, #267dff, #10428c);
+}
+
+input,
+textarea {
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+/* animations */
+#message1 {
+  opacity: 0;
+  transform: translateY(1.25rem);
+  transition: all 1s;
+}
+#message2 {
+  opacity: 0;
+  transform: translateY(1.25rem);
+  transition: all 1s;
+}
+#message3 {
+  opacity: 0;
+  transform: translateY(1.25rem);
+  transition: all 1s;
+}
+.show-message {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: all 1s !important;
+  transform-origin: bottom;
+}
+#email-icon {
+  transform: translateY(5rem);
+  opacity: 0;
+}
+.email-icon-animation {
+  animation: fly 7s;
+}
+@keyframes fly {
+  0% {
+    transform: rotate(0deg) translateX(3.8rem) translateY(5rem) scale(0.5);
+    opacity: 0;
+  }
+  2% {
+    transform: rotate(0deg) translateX(3.8rem) translateY(5rem) scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(10deg) translateY(-44rem) scale(1.5);
+    opacity: 1;
+  }
+}
+svg:not(:root) {
+  overflow: visible;
+}
+
+#right-wing {
+  animation: right-wing 0.5s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: left bottom;
+}
+@keyframes right-wing {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}
+#left-wing {
+  animation: left-wing 0.5s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: right bottom;
+}
+@keyframes left-wing {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-30deg);
+  }
+}
+
+#plus-done {
+  opacity: 0;
+}
+.plus-done {
+  transform: translateY(1.9rem);
+  opacity: 1;
+  animation: plus-done 2s forwards;
+}
+
+@keyframes plus-done {
+  0% {
+    transform: translateY(1.9rem);
+    opacity: 0;
+  }
+  30% {
+    transform: translateY(-1.9rem);
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(-1.9rem);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
